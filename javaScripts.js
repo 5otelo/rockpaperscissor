@@ -19,25 +19,35 @@ document.getElementById("paper2").onclick = function(){
 document.getElementById("scissor2").onclick = function(){
  player2 = "Scissor";
 }
-document.getElementById("check") = function(){
+document.getElementById("check").onclick = function(){
 if(player1=="Rock" && player2=="Rock"){
 winner="Tie! Try again.";
-}else if(player1=="Rock" && player2=="Paper"){
+document.getElementById("winner").innerHTML = winner;
+}
+else if(player1=="Rock" && player2=="Paper"){
 winner="Player 2 wins!";
+document.getElementById("winner").innerHTML = winner;
 }else if(player1=="Rock" && player2=="Scissor"){
 winner="Player 1 wins!";
+document.getElementById("winner").innerHTML = winner;
 }else if(player1=="Paper" && player2=="Rock"){
 winner="Player 1 wins!";
+document.getElementById("winner").innerHTML = winner;
 }else if(player1=="Paper" && player2=="Paper"){
 winner="Tie! Try again.";
+document.getElementById("winner").innerHTML = winner;
 }else if(player1=="Paper" && player2=="Scissor"){
 winner="Player 2 wins!";
+document.getElementById("winner").innerHTML = winner;
 }else if(player1=="Scissor" && player2=="Rock"){
 winner="Player 2 wins!";
+document.getElementById("winner").innerHTML = winner;
 }else if(player1=="Scissor" && player2=="Paper"){
 winner="Player 1 wins!";
+document.getElementById("winner").innerHTML = winner;
 }else if(player1=="Scissor" && player2=="Scissor"){
 winner="Tie! try again.";
+document.getElementById("winner").innerHTML = winner;
 }
- document.getElementById("winner").innerHTML=winner;
+
 }
