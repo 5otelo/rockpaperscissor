@@ -4,20 +4,20 @@ var player2 ="";
 document.getElementById("rock1").onclick = function(){
  player1 = "Rock";
 }
-document.getElementById("rock1").onclick = function(){
+document.getElementById("paper1").onclick = function(){
  player1 = "Paper";
 }
-document.getElementById("rock1").onclick = function(){
+document.getElementById("scissor1").onclick = function(){
  player1 = "Scissor";
 }
-document.getElementById("rock1").onclick = function(){
- player1 = "Rock";
+document.getElementById("rock2").onclick = function(){
+ player2 = "Rock";
 }
-document.getElementById("rock1").onclick = function(){
- player1 = "Paper";
+document.getElementById("paper2").onclick = function(){
+ player2 = "Paper";
 }
-document.getElementById("rock1").onclick = function(){
- player1 = "Scissor";
+document.getElementById("scissor2").onclick = function(){
+ player2 = "Scissor";
 }
 document.getElementById("check") = function(){
 if(player1=="Rock" && player2=="Rock"){
